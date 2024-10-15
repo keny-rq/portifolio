@@ -1,0 +1,615 @@
+/* Fundo geral do site */
+body {
+    background: linear-gradient(135deg, black, rgba(255, 165, 0, 0.5) 40%, rgba(255, 255, 0, 0.3) 80%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Estilos para o cabeçalho, rodapé e secções com fundo transparente */
+header, footer, section {
+    background-color: transparent;
+    padding: 100px 0;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+}
+/* Espaçamento entre as secções */
+section {
+    margin: 0px 0; /* Para adicionar espaçamento entre secções */
+}
+/* Ajuste do conteúdo de cada seção */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Cabeçalho */
+header {
+   
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: opacity 0.5s ease; /* Transição suave da opacidade */
+}
+header h1 {
+    color: #ffcc00;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding-top: 100px; /* Garante que o conteúdo não fique escondido atrás do cabeçalho */
+}
+
+
+/* Adiciona espaçamento abaixo do cabeçalho */
+#apresentacao {
+    margin-top: 120px; /* Espaçamento para separar do cabeçalho fixo */
+    
+    color: #ffcc00;
+    padding: 100px 0;
+    text-align: center;
+    animation: slideRight 3s infinite;
+    position: relative;
+}
+
+/* Espaçamento entre seções */
+section {
+    padding: 60px 0; /* Adiciona mais espaçamento acima e abaixo das seções */
+}
+
+/* Conteúdo das seções */
+#sobre, #portfolio, #contato {
+    margin-top: 50px; /* Espaço extra entre cada seção */
+}
+
+#sobre h2, #portfolio h2, #contato h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sobre p, #contato p {
+    color: #f2f2f2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+
+
+/* Seções */
+section {
+    padding: 50px 0;
+}
+
+#sobre h2, #portfolio h2, #contato h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sobre p, #contato p {
+    color: #f2f2f2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 300px;
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item h3 {
+    color: #ff6600;
+    margin-top: 10px;
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #f2f2f2;
+}
+/* Seção de Apresentação Pessoal */
+#apresentacao {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffcc00;
+    padding: 100px 0;
+    text-align: center;
+    animation: slideRight 3s infinite;
+    position: relative;
+}
+
+#apresentacao h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#apresentacao p {
+    font-size: 1.2em;
+}
+
+/* Animação de Translação Lateral */
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(30px);
+    }
+    66% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* Estilo da seção de apresentação */
+#apresentacao {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffcc00;
+    padding: 100px 0;
+    text-align: center;
+    animation: slideRight 3s infinite;
+    position: relative;
+}
+
+/* Layout da seção de apresentação (imagem e descrição) */
+.apresentacao-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo da imagem redonda */
+.imagem-redonda {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilo dos ícones sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo da parte descritiva (título, parágrafo, botão) */
+.descricao {
+    text-align: left;
+    max-width: 600px;
+}
+
+.descricao h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.descricao p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+/* Estilo da seção "Sobre Mim" */
+#sobre {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f2f2f2;
+    padding: 100px 0;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Imagem Redonda no Lado Esquerdo */
+.imagem-lado-esquerdo {
+    flex: 1;
+    text-align: center;
+}
+
+.imagem-redonda {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Descrição e Tabela no Lado Direito */
+.descricao-lado-direito {
+    flex: 2;
+    padding-left: 50px;
+}
+
+.descricao-lado-direito h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.descricao-lado-direito p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Tabela de Avaliação Profissional */
+/* Estilos para os sliders */
+.slider {
+    -webkit-appearance: none; /* Remover estilo padrão do navegador */
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #ffcc00;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Estilo do "polegar" no Chrome */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ff6600;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ff6600;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.avaliacao-profissional td span {
+    font-size: 1.2em;
+    color: #ffcc00;
+    margin-left: 10px;
+}
+/* Estilo da Seção "Serviços" */
+#servicos {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.servicos-content h2 {
+    font-size: 2.8em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.servicos-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #f2f2f2;
+}
+
+/* Blocos dos Serviços */
+.servicos-blocos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.servico {
+    background-color: rgba(255, 102, 0, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+}
+
+.servico-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.servico h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.servico p {
+    font-size: 1.1em;
+    color: #f2f2f2;
+}
+/* Estilo da Seção "Meus Projetos" */
+#projetos {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.projetos-content h2 {
+    font-size: 2.8em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.projetos-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #f2f2f2;
+}
+
+/* Botões de Filtro */
+.filtros {
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter-btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Blocos dos Projetos */
+.projetos-blocos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto {
+    display: none; /* Inicialmente ocultos, até que um filtro seja selecionado */
+    width: 22%;
+    margin-bottom: 30px;
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projeto img:hover {
+    transform: scale(1.05);
+}
+/* Estilo da Seção "Comentários" */
+#comentarios {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.comentarios-content h2 {
+    font-size: 2.8em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.comentarios-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #f2f2f2;
+}
+
+/* Carrossel de Comentários */
+.comentarios-carrossel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comentarios-blocos {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.comentario {
+    display: none;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 102, 0, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comentario img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.comentario h3 {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.comentario p {
+    font-size: 1.1em;
+    color: #f2f2f2;
+}
+
+/* Botões de Navegação do Carrossel */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    transform: translateY(-50%);
+    transition: 0.6s ease;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 102, 0, 0.8);
+}
+
+/* Fundo comum para todas as seções, cabeçalho e rodapé */
+.fundo-comum {
+    background: linear-gradient(135deg, black, rgba(255, 165, 0, 0.5) 40%, rgba(255, 255, 0, 0.3) 80%);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Ajustes para garantir espaçamento entre seções */
+section {
+    padding: 100px 0;
+    margin: 20px 0;
+}
+

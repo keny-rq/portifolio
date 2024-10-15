@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio de Designer Gráfico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Designer Gráfico</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="apresentacao">
+        <div class="container apresentacao-content">
+            <!-- Parte da Imagem e Ícones -->
+            <div class="imagem-social">
+                <img src="sua-imagem-aqui.jpg" alt="Sua Imagem" class="imagem-redonda">
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="logos--facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="logos--twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="skill-icons--linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Parte do Título, Parágrafo e Botão -->
+            <div class="descricao">
+                <h2>UI & UX</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac venenatis leo. Curabitur vulputate, nisl sit amet aliquet tempus, nulla justo convallis purus, vel egestas neque odio vitae urna.</p>
+                <button class="btn">Ver Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container sobre-content">
+            <!-- Imagem Redonda -->
+            <div class="imagem-lado-esquerdo">
+                <img src="sua-imagem-aqui.jpg" alt="Minha Foto" class="imagem-redonda">
+            </div>
+
+            <!-- Título e Avaliação Profissional -->
+            <div class="descricao-lado-direito">
+                <h2>Sobre mim</h2>
+                <p>Sou um designer gráfico com mais de 5 anos de experiência, especializado em branding, design de sites e identidade visual...</p>
+
+                <!-- Tabela de Avaliação Profissional com Range Sliders -->
+                <table class="avaliacao-profissional">
+                    <tr>
+                        <th>Qualidade</th>
+                        <th>Avaliação</th>
+                    </tr>
+                    <tr>
+                        <td>Criatividade</td>
+                        <td>
+                            <input type="range" min="1" max="5" value="5" class="slider" id="criatividade">
+                            <span id="valor-criatividade">5</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inovação</td>
+                        <td>
+                            <input type="range" min="1" max="5" value="4" class="slider" id="inovacao">
+                            <span id="valor-inovacao">4</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comunicação</td>
+                        <td>
+                            <input type="range" min="1" max="5" value="4" class="slider" id="comunicacao">
+                            <span id="valor-comunicacao">4</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Resolução de Problemas</td>
+                        <td>
+                            <input type="range" min="1" max="5" value="5" class="slider" id="resolucao">
+                            <span id="valor-resolucao">5</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="servicos">
+        <div class="container servicos-content">
+            <h2>Serviços</h2>
+            <p>Ofereço uma ampla gama de serviços de design gráfico para atender suas necessidades de branding, design digital e muito mais.</p>
+
+            <!-- Quatro Blocos de Serviços -->
+            <div class="servicos-blocos">
+                <div class="servico">
+                    <img src="icone-branding.png" alt="Branding" class="servico-icon">
+                    <h3>Branding</h3>
+                    <p>Criamos identidades visuais fortes para que sua marca se destaque no mercado.</p>
+                </div>
+
+                <div class="servico">
+                    <img src="icone-webdesign.png" alt="Web Design" class="servico-icon">
+                    <h3>Web Design</h3>
+                    <p>Desenvolvimento de websites modernos e responsivos para a sua presença online.</p>
+                </div>
+
+                <div class="servico">
+                    <img src="icone-design-grafico.png" alt="Design Gráfico" class="servico-icon">
+                    <h3>Design Gráfico</h3>
+                    <p>Criação de peças visuais para campanhas publicitárias, mídias sociais e muito mais.</p>
+                </div>
+
+                <div class="servico">
+                    <img src="icone-ilustracao.png" alt="Ilustração" class="servico-icon">
+                    <h3>Ilustração</h3>
+                    <p>Desenvolvimento de ilustrações personalizadas para seus projetos visuais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção "Meus Projetos" -->
+    <section id="projetos">
+        <div class="container projetos-content">
+            <h2>Meus Projetos</h2>
+            <p>Aqui estão alguns dos projetos que realizei ao longo da minha carreira como designer gráfico.</p>
+
+            <!-- Botões para Filtrar os Projetos -->
+            <div class="filtros">
+                <button class="filter-btn" onclick="filtrarProjetos('uiux')">UI/UX</button>
+                <button class="filter-btn" onclick="filtrarProjetos('branding')">Branding</button>
+                <button class="filter-btn" onclick="filtrarProjetos('webdesign')">Web Design</button>
+                <button class="filter-btn" onclick="filtrarProjetos('ilustracao')">Ilustração</button>
+            </div>
+
+            <!-- Imagens dos Projetos -->
+            <div class="projetos-blocos">
+                <!-- Projetos UI/UX -->
+                <div class="projeto uiux">
+                    <img src="projeto-uiux1.jpg" alt="Projeto UI/UX 1">
+                </div>
+                <div class="projeto uiux">
+                    <img src="projeto-uiux2.jpg" alt="Projeto UI/UX 2">
+                </div>
+
+                <!-- Projetos Branding -->
+                <div class="projeto branding">
+                    <img src="projeto-branding1.jpg" alt="Projeto Branding 1">
+                </div>
+                <div class="projeto branding">
+                    <img src="projeto-branding2.jpg" alt="Projeto Branding 2">
+                </div>
+
+                <!-- Projetos Web Design -->
+                <div class="projeto webdesign">
+                    <img src="projeto-webdesign1.jpg" alt="Projeto Web Design 1">
+                </div>
+                <div class="projeto webdesign">
+                    <img src="projeto-webdesign2.jpg" alt="Projeto Web Design 2">
+                </div>
+
+                <!-- Projetos Ilustração -->
+                <div class="projeto ilustracao">
+                    <img src="projeto-ilustracao1.jpg" alt="Projeto Ilustração 1">
+                </div>
+                <div class="projeto ilustracao">
+                    <img src="projeto-ilustracao2.jpg" alt="Projeto Ilustração 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comentarios">
+        <div class="container comentarios-content">
+            <h2>O que dizem os clientes</h2>
+            <p>Aqui estão alguns comentários de clientes que já utilizaram meus serviços de design gráfico.</p>
+
+            <!-- Carrossel de Comentários -->
+            <div class="comentarios-carrossel">
+                <button class="prev" onclick="moverCarrossel(-1)">&#10094;</button>
+                <div class="comentarios-blocos">
+                    <div class="comentario">
+                        <img src="cliente1.jpg" alt="Cliente 1" class="perfil-imagem">
+                        <h3>Maria Silva</h3>
+                        <p>"Trabalho incrível! O design do meu site ficou impecável e exatamente como eu imaginava."</p>
+                    </div>
+
+                    <div class="comentario">
+                        <img src="cliente2.jpg" alt="Cliente 2" class="perfil-imagem">
+                        <h3>João Costa</h3>
+                        <p>"Muito profissional e criativo. A identidade visual que criou para minha empresa é única!"</p>
+                    </div>
+
+                    <div class="comentario">
+                        <img src="cliente3.jpg" alt="Cliente 3" class="perfil-imagem">
+                        <h3>Ana Oliveira</h3>
+                        <p>"Serviço rápido e de alta qualidade. Super recomendo para quem precisa de design gráfico."</p>
+                    </div>
+
+                    <div class="comentario">
+                        <img src="cliente4.jpg" alt="Cliente 4" class="perfil-imagem">
+                        <h3>Carlos Souza</h3>
+                        <p>"Excelente trabalho! O branding que desenvolveu deu um novo rosto à nossa empresa."</p>
+                    </div>
+                </div>
+                <button class="next" onclick="moverCarrossel(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato para discutir seu próximo projeto!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu email">
+                <textarea name="message" placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Designer Gráfico. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.scrollY; // Pega a quantidade de rolagem
+            let opacity = Math.max(1 - scrollTop / 300, 0); // Calcula a opacidade (entre 1 e 0)
+            header.style.opacity = opacity; // Aplica a opacidade ao cabeçalho
+        });
+    </script>
+     <script>
+        const criatividadeSlider = document.getElementById("criatividade");
+        const inovacaoSlider = document.getElementById("inovacao");
+        const comunicacaoSlider = document.getElementById("comunicacao");
+        const resolucaoSlider = document.getElementById("resolucao");
+
+        const valorCriatividade = document.getElementById("valor-criatividade");
+        const valorInovacao = document.getElementById("valor-inovacao");
+        const valorComunicacao = document.getElementById("valor-comunicacao");
+        const valorResolucao = document.getElementById("valor-resolucao");
+
+        // Atualizar o valor exibido ao lado do slider
+        criatividadeSlider.oninput = function() {
+            valorCriatividade.innerHTML = this.value;
+        };
+        inovacaoSlider.oninput = function() {
+            valorInovacao.innerHTML = this.value;
+        };
+        comunicacaoSlider.oninput = function() {
+            valorComunicacao.innerHTML = this.value;
+        };
+        resolucaoSlider.oninput = function() {
+            valorResolucao.innerHTML = this.value;
+        };
+    </script>
+     <!-- Script JavaScript para Filtrar os Projetos -->
+     <script>
+        function filtrarProjetos(categoria) {
+            // Ocultar todos os projetos
+            var projetos = document.getElementsByClassName('projeto');
+            for (var i = 0; i < projetos.length; i++) {
+                projetos[i].style.display = 'none';
+            }
+
+            // Mostrar apenas os projetos da categoria selecionada
+            var projetosSelecionados = document.getElementsByClassName(categoria);
+            for (var i = 0; i < projetosSelecionados.length; i++) {
+                projetosSelecionados[i].style.display = 'block';
+            }
+        }
+
+        // Mostrar todos os projetos inicialmente
+        window.onload = function() {
+            filtrarProjetos('uiux'); // Por padrão, mostra os projetos UI/UX
+        };
+    </script>
+    <script>
+        let indiceAtual = 0;
+        mostrarComentario(indiceAtual);
+
+        function moverCarrossel(direcao) {
+            mostrarComentario(indiceAtual += direcao);
+        }
+
+        function mostrarComentario(indice) {
+            let comentarios = document.getElementsByClassName('comentario');
+            if (indice >= comentarios.length) {
+                indiceAtual = 0;
+            }
+            if (indice < 0) {
+                indiceAtual = comentarios.length - 1;
+            }
+            for (let i = 0; i < comentarios.length; i++) {
+                comentarios[i].style.display = 'none';
+            }
+            comentarios[indiceAtual].style.display = 'block';
+        }
+    </script>
+</body>
+</html>
